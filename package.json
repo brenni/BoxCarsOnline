@@ -4,7 +4,7 @@
   "description": "Genetic Cars ONLINE",
   "main": "cars_API.js",
   "scripts": {
-    "start": "cars_API.js"
+    "start": "node cars_API.js"
   },
   "author": "",
   "license": "ISC",
