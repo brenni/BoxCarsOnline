@@ -1,0 +1,16 @@
+{
+  "name": "cars",
+  "version": "1.0.0",
+  "description": "Genetic Cars ONLINE",
+  "main": "cars_API.js",
+  "scripts": {
+    "start": "node cars_API.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "lodash": "^3.10.1"
+  }
+}
