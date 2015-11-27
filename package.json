@@ -1,6 +1,6 @@
 {
   "name": "cars",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Genetic Cars ONLINE",
   "main": "cars_API.js",
   "scripts": {
@@ -12,5 +12,8 @@
     "body-parser": "^1.14.1",
     "express": "^4.13.3",
     "lodash": "^3.10.1"
-  }
+  },
+"engines": {
+    "node": "4.1.1"
+}
 }
