@@ -390,6 +390,7 @@ var jsonhttp = new XMLHttpRequest();
 function cw_generationZero() {
     cw_pullTop();
     cw_listTopScores();
+    console.log("Top Scores are: "+cw_topScores);
   for(var k = 0; k < (generationSize - 10); k++) {
     var car_def = cw_createRandomCar();
     car_def.index = k;
