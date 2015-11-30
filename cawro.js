@@ -350,7 +350,7 @@ function cw_createRandomCar() {
 function cw_pushTop(){
         if(cw_carScores[0].car_def.userId === username){
     var xhr = new XMLHttpRequest();
-    var url = "Brendan"+gen_counter;
+    var url = username+gen_counter;
   xhr.open("POST", url, true);
   xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
    
@@ -388,6 +388,8 @@ var jsonhttp = new XMLHttpRequest();
 /* ==== Generation ========================================================= */
 
 function cw_generationZero() {
+    cw_pullTop();
+    plot_graphs();
   for(var k = 0; k < (generationSize - 10); k++) {
     var car_def = cw_createRandomCar();
     car_def.index = k;
