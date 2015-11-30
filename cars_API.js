@@ -79,6 +79,6 @@ console.log('Sending Top Scores');
 
 
 
-var server = app.listen(port, '0.0.0.0', function() {
+/**var server = app.listen(port, '0.0.0.0', function() {
 	console.log('Server running.');
-});
+});**/
