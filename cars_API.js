@@ -16,7 +16,7 @@ console.log("Server running at "+__dirname);
 
 var port = process.env.port;
 app.listen(port);
-
+console.log("App listening to port: "+port);
 
 // Add a user's car to the list
 app.post('/:user', function(req, res) {
