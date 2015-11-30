@@ -365,11 +365,11 @@ function cw_pushTop(){
 function cw_pullTop(){
 var jsonhttp = new XMLHttpRequest();
         var url = "/top";
-    
+        console.log("pulling");
         jsonhttp.onreadystatechange = function() {
              if (jsonhttp.readyState == 4 && jsonhttp.status == 200) {
         	JSONObj = JSON.parse(jsonhttp.responseText);
-                
+            console.log("pulled");    
         	for(var k = 0; k < 10; k++){
             		cw_topScores.push({i:JSONObj[k].car_def.userId,v:JSONObj[k].v,x:JSONObj[k].x,y:JSONObj[k].y,y2:JSONObj[k].y2, c:JSONObj[k].car_def.colour});
        		}
