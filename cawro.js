@@ -762,7 +762,7 @@ function cw_drawCars() {
     } else {
       ctx.strokeStyle = "#000000";
       //ctx.fillStyle = "#fdd";
-        if(myCar.is_enemy){
+        if(myCar.userId !== username){
             ctx.fillStyle = "hsl("+myCar.colour+",50%,50%)";
            //  console.log("Car # "+k+" is enemy? "+myCar.is_enemy);
         } else {
