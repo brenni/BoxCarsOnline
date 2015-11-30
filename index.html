@@ -296,14 +296,14 @@
       <div id="cars"></div>
     </div>
     <div id="explanation">
-      <h3>GitHub</h3>
-      The code is forked from a <a href="https://github.com/red42/HTML5_Genetic_Cars">GitHub repository</a>. Feel free to contribute to it!
+        <h3>But what is it?</h3>
+      The game leverages the power of distributed parralel processing over multiple computers to implement a simple genetic algorithm that evolves random two-wheeled shapes into cars over generations. Based on, and forked from Rednuht's boxcar2d, but with a rewritten backend that pitts online players against each other with the challenge of determining the best possible car.<br />
       <h3>Controls</h3>
       Save Population: Saves current population locally.<br />
       Restore Saved Population: Restore a previously saved population.<br />
       Suprise: Toggles drawing, makes the simulation faster.<br />
       New Population: Keeps the generated track and restarts the whole car population.<br />
-      Create new world with seed: The same seed always creates the same track, so you can agree on a seed with your friends and compete. :)<br />
+      Create new world with seed: The same seed always creates the same track, so you can agree on a seed with your friends and compete. :)<br/>
       Mutation rate: The chance that each gene in each individual will mutate to a random value when a new generation is born.<br />
       Mutation size: The range each gene can mutate into. Lower numbers mean the gene will have values closer to the original.<br />
       Elite clones: The top n cars that will be copied over to the next generation.<br />
@@ -312,17 +312,17 @@
       Red: Top score in each generation.<br />
       Green: Average of the top 10 cars in each generation.<br />
       Blue: Average of the entire generation.
-      <h3>But what is it?</h3>
-      The program uses a simple genetic algorithm to evolve random two-wheeled shapes into cars over generations. Loosely based on <a href="http://boxcar2d.com/">BoxCar2D</a>, but
-      written from scratch, only using the same physics engine (<a href="http://box2d.org/">box2d</a>).<br />
-      seedrandom.js written by <a href="http://davidbau.com/">David Bau</a>. (thanks!)
+      
       <h3>Genome</h3>
       The genome consists of:<br />
       - Shape: (8 genes, 1 per vertex)<br />
       - Wheel size: (2 genes, 1 per wheel)<br />
       - Wheel position: (2 genes, 1 per wheel)<br />
-      - Wheel density: (2 genes, 1 per wheel) darker wheels mean denser wheels<br />
-      - Chassis density: (1 gene) darker body means denser chassis
+      - Wheel density: (2 genes, 1 per wheel)<br />
+      - Chassis density: (1 gene)
+        
+        <h3>GitHub</h3>
+      The code is forked from a <a href="https://github.com/red42/HTML5_Genetic_Cars">GitHub repository</a>. Feel free to contribute to it!
     </div>
     <div name="minimapmarker" class="minimapmarker"></div>
     <div name="healthbar" class="healthbar" onclick="cw_setCameraTarget(this.car_index)">
