@@ -14,7 +14,8 @@ var carList = [{"car_def":{"wheelCount":2,"userId":"Computer","colour":"hsl(360,
 app.use(express.static(__dirname));
 console.log("Server running at "+__dirname);
 
-app.listen(process.env.port || 3000);
+
+app.listen(process.env.port || 8080);
 
 
 
@@ -79,6 +80,6 @@ console.log('Sending Top Scores');
 
 
 
-var server = app.listen(3000, '0.0.0.0', function() {
+var server = app.listen(8080, '0.0.0.0', function() {
 	console.log('Server running.');
 });
