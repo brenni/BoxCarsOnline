@@ -3,7 +3,7 @@ var express = require('express');
 var _ = require('lodash');
 var app = express();
 var bodyParser = require('body-parser');
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json());
 
 var inCar = {}
