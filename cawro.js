@@ -30,7 +30,7 @@ var graphwidth = 400;
 
 var minimapcanvas = document.getElementById("minimap");
 var minimapctx = minimapcanvas.getContext("2d");
-var minimapscale = 3;
+var minimapscale = 6;
 var minimapfogdistance = 0;
 var fogdistance = document.getElementById("minimapfog").style;
 
