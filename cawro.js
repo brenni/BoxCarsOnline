@@ -30,7 +30,7 @@ var graphwidth = 400;
 
 var minimapcanvas = document.getElementById("minimap");
 var minimapctx = minimapcanvas.getContext("2d");
-var minimapscale = 6;
+var minimapscale = 1.5;
 var minimapfogdistance = 0;
 var fogdistance = document.getElementById("minimapfog").style;
 
@@ -1100,7 +1100,7 @@ function cw_init() {
 
   for(var k = 0; k < generationSize; k++) {
 
-    // minimap markers
+    // minimap markeFrs
     var newbar = mmm.cloneNode(true);
     newbar.id = "bar"+k;
     newbar.style.paddingTop = k*9+"px";
