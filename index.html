@@ -8,11 +8,12 @@
         #usernameblock{
             top:0px;
             left:0px;
+            bottom:0px;
             width:100%;
-            height:100%;
-                position:absolute;
+            min-height:100%;
+                position:fixed;
             overflow: hidden;
-            background-color: beige;
+            background-color: lightcyan;
             z-index: 6;
         }
       #mainbox {
@@ -296,7 +297,7 @@
     </div>
     <div id="explanation">
       <h3>GitHub</h3>
-      The code is now on a <a href="https://github.com/red42/HTML5_Genetic_Cars">GitHub repository</a>. Feel free to contribute!
+      The code is forked from a <a href="https://github.com/red42/HTML5_Genetic_Cars">GitHub repository</a>. Feel free to contribute to it!
       <h3>Controls</h3>
       Save Population: Saves current population locally.<br />
       Restore Saved Population: Restore a previously saved population.<br />
@@ -322,11 +323,6 @@
       - Wheel position: (2 genes, 1 per wheel)<br />
       - Wheel density: (2 genes, 1 per wheel) darker wheels mean denser wheels<br />
       - Chassis density: (1 gene) darker body means denser chassis
-      <h3>Blurb</h3>
-      This is not as deterministic as it should be, so your best car may not perform as well as it once did. The terrain gets more complex with distance.<br />
-      I'm not in the mood to deal with checking if all scripts have loaded before running, so refresh the page if things seem whack.<br />
-      Written by <a href="http://rednuht.org">this guy</a>.<br />
-      <a href="mailto:rednuht@rednuht.org">Send me food</a>.
     </div>
     <div name="minimapmarker" class="minimapmarker"></div>
     <div name="healthbar" class="healthbar" onclick="cw_setCameraTarget(this.car_index)">
