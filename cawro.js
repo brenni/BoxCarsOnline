@@ -389,7 +389,7 @@ var jsonhttp = new XMLHttpRequest();
 
 function cw_generationZero() {
     cw_pullTop();
-    plot_graphs();
+    cw_listTopScores();
   for(var k = 0; k < (generationSize - 10); k++) {
     var car_def = cw_createRandomCar();
     car_def.index = k;
