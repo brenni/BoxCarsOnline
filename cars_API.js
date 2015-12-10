@@ -14,11 +14,9 @@ var carList = [{"car_def":{"wheelCount":2,"userId":"Computer","colour":"hsl(360,
 app.use(express.static(__dirname));
 console.log("Server running at "+__dirname);
 
-<<<<<<< HEAD
-var port = process.env.PORT || 8080;
-=======
-var port = process.env.PORT || 8080
->>>>>>> master
+
+var port = process.env.PORT;
+
 app.listen(port);
 console.log("App listening to port: "+port);
 
