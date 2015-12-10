@@ -84,6 +84,6 @@ function cw_listTopScores() {
   ts.innerHTML = "Top Scores:<br />";
   cw_topScores.sort(function(a,b) {if(a.v > b.v) {return -1} else {return 1}});
   for(var k = 0; k < Math.min(10,cw_topScores.length); k++) {
-    document.getElementById("topscores").innerHTML += "#"+(k+1)+": "+Math.round(cw_topScores[k].v*100)/100+" d:"+Math.round(cw_topScores[k].x*100)/100+" h:"+Math.round(cw_topScores[k].y2*100)/100+"/"+Math.round(cw_topScores[k].y*100)/100+"m Created by: <font style=\"color: hsl("+cw_topScores[k].c+",100%,50%)\">"+cw_topScores[k].i+"</font><br />";
+    document.getElementById("topscores").innerHTML += "#"+(k+1)+": "+Math.round(cw_topScores[k].v*100)/100+" d:"+Math.round(cw_topScores[k].x*100)/100+" h:"+Math.round(cw_topScores[k].y2*100)/100+"/"+Math.round(cw_topScores[k].y*100)/100+"m Created by: <font style=\"color: "+cw_topScores[k].c+"\">"+cw_topScores[k].i+"</font><br />";
   }
 }

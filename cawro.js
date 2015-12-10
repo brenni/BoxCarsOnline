@@ -307,7 +307,7 @@ function cw_createRandomCar() {
   car_def.wheelCount = 2; 
   car_def.userId = username;
    // console.log("Car made with username: "+username);
-    car_def.colour = "hsl("+colour+",50%,50%)";
+    car_def.colour = colour;
   car_def.wheel_radius = [];
   car_def.wheel_density = [];
   car_def.wheel_vertex = [];
@@ -763,10 +763,10 @@ function cw_drawCars() {
       ctx.strokeStyle = "#000000";
       //ctx.fillStyle = "#fdd";
         if(myCar.userId !== username){
-            ctx.fillStyle = "hsl("+myCar.colour+",50%,50%)";
+            ctx.fillStyle = myCar.colour;
            //  console.log("Car # "+k+" is enemy? "+myCar.is_enemy);
         } else {
-      ctx.fillStyle = "hsl("+colour+",50%,50%)";
+      ctx.fillStyle = colour;
         }
     }
     ctx.beginPath();
@@ -1094,7 +1094,7 @@ function cw_toggleGhostReplay(button) {
 function cw_init() {
     //Get Username and Colour
     username = document.getElementById("username").value;
-    colour = document.getElementById("colour").value;
+    colour = "hsl("+document.getElementById("colour").value+",50%,50%)";
     
     
   // clone silver dot and health bar
